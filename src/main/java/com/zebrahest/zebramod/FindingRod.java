@@ -11,8 +11,8 @@ public class FindingRod extends Item {
 	public static Item item;
 
 	public FindingRod(){
-		setRegistryName("findingRod");
-		setUnlocalizedName("FindingRod");
+		setRegistryName("findingrod");
+		setUnlocalizedName("findingrod");
 		GameRegistry.register(this);
 	}
 }
