@@ -15,16 +15,13 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.example.examplemod.ExampleMod;
 
-@Mod(modid = ZebraMod.MODID, version = ZebraMod.VERSION)
+@Mod(modid = ZebraMod.MODID, version = ZebraMod.VERSION, dependencies = "required-after:Forge@[12.18.0.2006,)", useMetadata = true)
 public class ZebraMod {
-
 	public static final String MODID = "ZebraMod";
 	public static final String VERSION = "0.0";
 	
-	@Mod.Instance
-	public static ZebraMod instance;
-	
-	public static Logger log;
+//	@Mod.Instance
+//	public static ZebraMod instance;
 	
 	@SidedProxy(clientSide = "com.zebrahest.zebramod.ClientProxy", serverSide = "com.zebrahest.zebramod.ServerProxy")
 	public static CommonProxy proxy;
