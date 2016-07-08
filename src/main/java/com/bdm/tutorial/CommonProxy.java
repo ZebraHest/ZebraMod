@@ -5,11 +5,12 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import com.bdm.tutorial.blocks.ModBlocks;
+import com.bdm.tutorial.item.ModItems;
 
 public class CommonProxy {
 
 	public void preInit(FMLPreInitializationEvent e) {
-		// ModItems.createItems();
+		ModItems.createItems();
 		ModBlocks.createBlocks();
 	}
 

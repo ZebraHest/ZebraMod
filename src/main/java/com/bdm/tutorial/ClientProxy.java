@@ -5,6 +5,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import com.bdm.tutorial.client.render.blocks.BlockRenderRegister;
+import com.bdm.tutorial.client.render.items.ItemRenderRegister;
 
 public class ClientProxy extends CommonProxy {
 
@@ -12,12 +13,13 @@ public class ClientProxy extends CommonProxy {
 	public void preInit(FMLPreInitializationEvent e) {
 		super.preInit(e);
 		BlockRenderRegister.preInit();
+		ItemRenderRegister.preInit();
 	}
 
 	@Override
 	public void init(FMLInitializationEvent e) {
 		super.init(e);
-		// ItemRenderRegister.registerItemRender();
+		ItemRenderRegister.registerItemRender();
 		BlockRenderRegister.registerBlockRenderer();
 	}
 
