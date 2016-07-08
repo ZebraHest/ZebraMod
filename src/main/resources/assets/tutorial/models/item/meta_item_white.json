@@ -1,0 +1,6 @@
+{
+    "parent":"tutorial:items/standard_item",
+    "textures": {
+        "layer0": "tutorial:blocks/block_properties_white"
+    }
+}

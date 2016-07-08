@@ -10,8 +10,8 @@ public class ClientProxy extends CommonProxy {
 
 	@Override
 	public void preInit(FMLPreInitializationEvent e) {
-		// TODO Auto-generated method stub
 		super.preInit(e);
+		BlockRenderRegister.preInit();
 	}
 
 	@Override
