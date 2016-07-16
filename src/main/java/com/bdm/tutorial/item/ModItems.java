@@ -9,8 +9,7 @@ public final class ModItems {
 	public static Item metaItem;
 
 	public static final void createItems() {
-		tutorialItem = new BasicItem("Tutorial Item", "tutorial_item");
-		GameRegistry.register(tutorialItem);
+		GameRegistry.register(tutorialItem = new BasicItem("tutorial_item", "tutorial_item"));
 		GameRegistry.register(metaItem = new MetaItem("meta_item", "meta_item"));
 	}
 }

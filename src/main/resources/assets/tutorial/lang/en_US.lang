@@ -1,0 +1,9 @@
+< en_US.lang - English localization file for the mod Tutorial >
+
+item.tutorial_item.name=Tutorial Item
+item.meta_item.white.name=White Meta Item
+item.meta_item.black.name=Black Meta Item
+
+tile.tutorial_block.name=Tutorial Block
+tile.block_properties.white.name=White Meta Block
+tile.block_properties.black.name=Black Meta Block
