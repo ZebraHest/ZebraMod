@@ -17,6 +17,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
+import com.bdm.tutorial.ModTab;
 import com.bdm.tutorial.item.itemstack.IMetaBlockName;
 
 public class BlockProperties extends Block implements IMetaBlockName {
@@ -27,7 +28,7 @@ public class BlockProperties extends Block implements IMetaBlockName {
 		super(material);
 		this.setRegistryName(regName);
 		this.setUnlocalizedName(unlocalizedName);
-		this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+		this.setCreativeTab(ModTab.modTab);
 		this.setHardness(hardness);
 		this.setResistance(resistence);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(TYPE, EnumType.BLACK));

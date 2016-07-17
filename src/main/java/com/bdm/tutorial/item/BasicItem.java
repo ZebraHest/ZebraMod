@@ -1,7 +1,8 @@
 package com.bdm.tutorial.item;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+
+import com.bdm.tutorial.ModTab;
 
 public class BasicItem extends Item {
 
@@ -10,7 +11,7 @@ public class BasicItem extends Item {
 
 		this.setUnlocalizedName(unlocalizedName);
 		this.setRegistryName(regName);
-		this.setCreativeTab(CreativeTabs.MISC);
+		this.setCreativeTab(ModTab.modTab);
 
 	}
 }

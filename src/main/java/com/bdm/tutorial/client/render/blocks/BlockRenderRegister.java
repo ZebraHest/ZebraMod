@@ -17,6 +17,7 @@ public final class BlockRenderRegister {
 		reg(ModBlocks.tutorialBlock);
 		reg(ModBlocks.blockProperties, 0, "block_properties_white");
 		reg(ModBlocks.blockProperties, 1, "block_properties_black");
+		reg(ModBlocks.modBlockTileEntity);
 	}
 
 	private static void reg(Block block) {

@@ -2,7 +2,8 @@ package com.bdm.tutorial.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
+
+import com.bdm.tutorial.ModTab;
 
 public class BasicBlock extends Block {
 
@@ -10,7 +11,7 @@ public class BasicBlock extends Block {
 		super(material);
 		this.setRegistryName(regName);
 		this.setUnlocalizedName(unlocalizedName);
-		this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+		this.setCreativeTab(ModTab.modTab);
 		this.setHardness(hardness);
 		this.setResistance(resistence);
 		this.setLightLevel(1.f);

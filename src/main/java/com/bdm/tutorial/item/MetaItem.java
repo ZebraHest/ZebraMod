@@ -6,6 +6,8 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
+import com.bdm.tutorial.ModTab;
+
 public class MetaItem extends Item {
 
 	public MetaItem(String unlocalizedName, String regName) {
@@ -13,7 +15,7 @@ public class MetaItem extends Item {
 		this.setUnlocalizedName(unlocalizedName);
 		this.setRegistryName(regName);
 		this.setHasSubtypes(true);
-		this.setCreativeTab(CreativeTabs.MISC);
+		this.setCreativeTab(ModTab.modTab);
 
 	}
 
